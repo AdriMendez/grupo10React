@@ -7,13 +7,6 @@ function ChartRow(props){
                     <td>{props.title}</td>
                     <td>{props.price}</td>
                     <td>{props.idArtist}</td>
-                    <td>
-                        <ul>
-                            {props.Categories.map( (category,i) => 
-                                <li key={`category ${i}`}>{category}</li>
-                            )}
-                        </ul>
-                    </td>
                     <td>{props.idGenre}</td>
                 </tr>
             )

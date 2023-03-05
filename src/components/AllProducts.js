@@ -7,6 +7,7 @@ class AllProducts extends Component{
         super(props)
         this.state = {products: []};
     }
+ 
 
     componentDidMount() {
         fetch('http://localhost:3003/api/products')
@@ -14,10 +15,9 @@ class AllProducts extends Component{
         return respuesta.json()
       })
       .then(allProducts => {
-        this.setState({ products: allProducts.data })
-    console.log({products})  
+        this.setState({ products: allProducts.data }) 
     })
-      
+
       .catch(error => console.log(error))
     }
 

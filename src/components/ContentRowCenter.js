@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fragment } from 'react/cjs/react.production.min';
 //import LastMovieInDb from './LastMovieInDb';
 import GenresInDb from './GenresInDb';
 
@@ -8,6 +9,7 @@ function ContentRowCenter(){
             
             {/*<!-- Last Movie in DB -->
             <LastMovieInDb />*/}
+
             {/*<!-- End content row last movie in Data Base -->*/}
 
             {/*<!-- Genres in DB -->*/}

@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../assets/images/imagen-header-Logo.png';
 import ContentWrapper from './ContentWrapper';
+import AllUsers from './AllUsers';
 import AllProducts from './AllProducts';
 //import AllUsers from './AllUsers';
 import GenresInDb from './GenresInDb';
@@ -111,8 +112,12 @@ function SideBar(){
                 <Route exact path="/">
                     <ContentWrapper />
                 </Route>
+
                 <Route path="/AllProducts">
                     <AllProducts />
+                </Route>
+                <Route path="/AllUsers">
+                    <AllUsers />
                 </Route>
                 
                 

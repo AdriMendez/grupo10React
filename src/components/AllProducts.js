@@ -32,13 +32,12 @@ class AllProducts extends Component{
                         <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
                             <thead>
                                 <tr>
-                                    <th>id</th>
+                                   
                                     <th>Título</th>
                                     <th>Género</th>
-                                    <th>Sello</th>
                                     <th>Año</th>
                                     <th>Precio</th>
-                                    <th>Artist</th>
+                                    <th>sello</th>
                                 </tr>
                             </thead>
                             {/* <tfoot>

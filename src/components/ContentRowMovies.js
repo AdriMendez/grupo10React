@@ -22,9 +22,9 @@ class ContentRowMovies extends Component{
           .then(data => {
             
                 let prodsInDB = {
-                title: 'Productos',
+                title: 'Total de Productos',
                 color: 'primary', 
-                cuantity: data.total,
+                cuantity: data.meta.total,
                 icon: 'fa-clipboard-list'
             }
 
@@ -39,9 +39,9 @@ class ContentRowMovies extends Component{
           .then(data => {
             console.log('segundo then user!');
                 let usersInDB = {
-                title: 'Usuarios',
+                title: 'Total de Usuarios',
                 color: 'success', 
-                cuantity: data.total,
+                cuantity: data.meta.total,
                 icon: 'fa-user-check'
             }
 
@@ -55,9 +55,9 @@ class ContentRowMovies extends Component{
           .then(data => {
            
                 let categoriesInDB = {
-                title: 'Generos',
+                title: 'Total de Géneros',
                 color: 'warning', 
-                cuantity: data.total,
+                cuantity: data.meta.total,
                 icon: 'fa-award'
             }
 

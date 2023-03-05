@@ -27,7 +27,7 @@ class AllUsers extends Component{
 
             <div className="card shadow mb-4">
                 <div className="card-body">
-                <h3 className='titulo-sidebar'>Todos los productos</h3>
+                <h3 className='titulo-sidebar'>Todos los usuarios</h3>
                     <div className="table-responsive">
                         <table className="table table-bordered" id="dataTable" width="100%" cellSpacing="0">
                             <thead>

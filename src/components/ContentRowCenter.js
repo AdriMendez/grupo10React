@@ -1,6 +1,6 @@
 import React from 'react';
-import { Fragment } from 'react/cjs/react.production.min';
-//import LastMovieInDb from './LastMovieInDb';
+//import { Fragment } from 'react/cjs/react.production.min';
+import LastMovieInDb from './LastMovieInDb';
 import GenresInDb from './GenresInDb';
 
 function ContentRowCenter(){
@@ -13,6 +13,7 @@ function ContentRowCenter(){
             {/*<!-- End content row last movie in Data Base -->*/}
 
             {/*<!-- Genres in DB -->*/}
+            <LastMovieInDb />
             <GenresInDb />
 
         </div>

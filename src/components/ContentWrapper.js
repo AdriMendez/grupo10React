@@ -1,6 +1,7 @@
 import React from 'react';
 import TopBar from './TopBar';
 import ContentRowTop from './ContentRowTop';
+//import LastMovieInDb from './LastMovieInDb';
 import Footer from './Footer';
 function ContentWrapper(){
     return (

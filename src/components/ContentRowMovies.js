@@ -25,7 +25,7 @@ class ContentRowMovies extends Component{
                 title: 'Total de Productos',
                 color: 'primary', 
                 cuantity: data.meta.total,
-                icon: 'fa-clipboard-list'
+                icon: 'fa-compact-disc'
             }
 
             totalizadores.push(prodsInDB);
@@ -58,7 +58,7 @@ class ContentRowMovies extends Component{
                 title: 'Total de Géneros',
                 color: 'warning', 
                 cuantity: data.meta.total,
-                icon: 'fa-award'
+                icon: 'fa-music'
             }
 
             totalizadores.push(categoriesInDB);

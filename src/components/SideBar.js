@@ -5,14 +5,14 @@ import AllUsers from './AllUsers';
 import AllProducts from './AllProducts';
 //import AllUsers from './AllUsers';
 import GenresInDb from './GenresInDb';
-//import LastMovieInDb from './LastMovieInDb';
+import LastMovieInDb from './LastMovieInDb';
 import ContentRowMovies from './ContentRowMovies';
 import SearchMovies from './SearchMovies';
 import NotFound from './NotFound';
-import {Link, Route, Switch} from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 
-function SideBar(){
-    return(
+function SideBar() {
+    return (
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
             <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -20,12 +20,12 @@ function SideBar(){
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                     <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Vinilos"/>
+                        <img className="w-100" src={image} alt="Vinilos" />
                     </div>
                 </a>
 
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider my-0"/>
+                <hr className="sidebar-divider my-0" />
 
                 {/*<!-- Nav Item - Dashboard -->*/}
                 <li className="nav-item active">
@@ -35,7 +35,7 @@ function SideBar(){
                 </li>
 
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider"/>
+                <hr className="sidebar-divider" />
 
                 {/*<!-- Heading -->*/}
                 <div className="sidebar-heading">Actions</div>
@@ -59,7 +59,7 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Pages -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/GenresInDb">
+                    <Link className="nav-link" to="/GenresInDb">
                         <i className="fas fa-fw fa-folder"></i>
                         <span>Géneros</span>
                     </Link>
@@ -74,11 +74,19 @@ function SideBar(){
 
                 {/*<!-- Nav Item - Tables -->*/}
                 <li className="nav-item nav-link">
-                <Link className="nav-link" to="/ContentRowMovies">
+                    <Link className="nav-link" to="/ContentRowMovies">
                         <i className="fas fa-fw fa-table"></i>
                         <span>Tables</span></Link>
                 </li>
-                
+
+                {/*<!-- Nav Item - LastAlbumInDb -->*/}
+                <li className="nav-item nav-link">
+                    <Link className="nav-link" to="/LastMovieinDb">
+                        <i className="fas fa-fw fa-table"></i>
+                        <span>Last Album in Db</span></Link>
+                </li>
+
+
                 {/*<!-- Buscador -->*/}
                 <li className="nav-item nav-link">
                     <Link className="nav-link" to="/SearchMovies">
@@ -88,7 +96,7 @@ function SideBar(){
                 </li>
 
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider d-none d-md-block"/>
+                <hr className="sidebar-divider d-none d-md-block" />
             </ul>
             {/*<!-- End of Sidebar -->*/}
 
@@ -119,15 +127,21 @@ function SideBar(){
                 <Route path="/AllUsers">
                     <AllUsers />
                 </Route>
-                
-                
+
+
                 <Route path="/GenresInDb">
                     <GenresInDb />
                 </Route>
-               
+
                 <Route path="/ContentRowMovies">
                     <ContentRowMovies />
                 </Route>
+                <Route path="/LastMovieInDb">
+                    <LastMovieInDb />
+                </Route>
+
+
+
                 <Route path="/SearchMovies">
                     <SearchMovies />
                 </Route>

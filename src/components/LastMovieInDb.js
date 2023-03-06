@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import imagenvinilo from '../assets/images/otro-vinilo.jpg';
 
 
 function LastProductInDB(){
@@ -21,7 +22,7 @@ function LastProductInDB(){
                 </div>
                 <div className="card-body">
                     <div className="text-center">
-                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={ultimoProducto.imagen} alt="Cargando imagen "/>
+                        <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={imagenvinilo} alt="Cargando imagen "/>
                     </div>
                     <p className="m-0 font-weight-bold text-gray-800">Compañia: </p>
                     <p>{ultimoProducto.company}</p>

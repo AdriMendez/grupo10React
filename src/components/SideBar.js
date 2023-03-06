@@ -42,7 +42,7 @@ function SideBar() {
 
                 <li className="nav-item">
                     <Link className="nav-link" to="/AllProducts">
-                        <i className="fas fa-shopping-cart"></i>
+                        <i className="fas fa-compact-disc"></i>
                         <span>Todos los Productos</span>
                     </Link>
                 </li>
